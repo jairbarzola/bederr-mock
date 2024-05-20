@@ -1,0 +1,550 @@
+{
+  "uuid": "c7d5b93a-2e18-47bd-99fe-b5c10811eae9",
+  "lastMigration": 32,
+  "name": "Bederr home dinamico",
+  "endpointPrefix": "",
+  "latency": 150,
+  "port": 3001,
+  "hostname": "0.0.0.0",
+  "folders": [
+    {
+      "uuid": "1f0fc1bc-5846-4e89-b1dc-bdc0f14b83f4",
+      "name": "Authentication",
+      "children": [
+        {
+          "type": "route",
+          "uuid": "5e44da5e-f14b-4cf7-bf94-7bd4331efdd0"
+        },
+        {
+          "type": "route",
+          "uuid": "c6861453-ebad-410f-a533-5cf9cf3e4ba2"
+        },
+        {
+          "type": "route",
+          "uuid": "c3d2cb61-47c5-4ff6-b365-efc5e101d2dc"
+        },
+        {
+          "type": "route",
+          "uuid": "3d26309c-0634-4eab-a843-f24d1774ba65"
+        },
+        {
+          "type": "route",
+          "uuid": "720639f9-7e41-432e-b5ef-661edf56f903"
+        },
+        {
+          "type": "route",
+          "uuid": "117e616e-2557-477b-9b66-b6cda2d20dce"
+        }
+      ]
+    },
+    {
+      "uuid": "e95333b9-e88f-45fc-9be6-07c258ea3393",
+      "name": "Configuration",
+      "children": [
+        {
+          "type": "route",
+          "uuid": "182dd0bb-14c3-4cf0-8d6a-c61e4cd4760e"
+        }
+      ]
+    },
+    {
+      "uuid": "0a75ca71-a289-4ba3-8579-749a0e4b0ed0",
+      "name": "Home",
+      "children": [
+        {
+          "type": "route",
+          "uuid": "adae54f9-2fec-4ac4-a717-799492ebff68"
+        },
+        {
+          "type": "route",
+          "uuid": "55b32b40-d087-4c55-91bc-ee064a68ca9f"
+        },
+        {
+          "type": "route",
+          "uuid": "bec0626b-4527-4b35-b2bb-b4b0225e75cf"
+        },
+        {
+          "type": "route",
+          "uuid": "57052a9b-d4a9-4f2c-98f8-5febe5630e71"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "uuid": "182dd0bb-14c3-4cf0-8d6a-c61e4cd4760e",
+      "type": "http",
+      "documentation": "Get app configuration",
+      "method": "get",
+      "endpoint": "v7/apps",
+      "responses": [
+        {
+          "uuid": "0c99fee3-52c7-408d-90cb-9cc3d77631e5",
+          "body": "[\r\n    {\r\n        \"uid\": \"O9q35W\",\r\n        \"name\": \"ColgateLoyaltyApp\",\r\n        \"favicon\": null,\r\n        \"api_key\": \"0a06fd49-9dcd-4ec4-a799-8ee5ad768bba\",\r\n        \"company\": {\r\n            \"uid\": \"966ZK9\",\r\n            \"name\": \"Colgate\",\r\n            \"description\": \"\",\r\n            \"logo\": \"https://bederr.s3.amazonaws.com/media/companies/logo_photos/4f2349ee5df74787b1557c8c499968c5_20190130143756.png\",\r\n            \"logo_rectangle\": \"https://bederr.s3.amazonaws.com/media/companies/logo_photos/499c79dd171f4f5b8c68069964dcdaac_20190130160840.jpg\",\r\n            \"cover\": null,\r\n            \"banner\": null,\r\n            \"ecommerce_enabled\": true,\r\n            \"benefit_programs_enabled\": true,\r\n            \"currency\": {\r\n                \"code\": \"PEN\",\r\n                \"name\": \"Sol\",\r\n                \"symbol\": \"S/\"\r\n            },\r\n            \"payment_gateway_settings\": null,\r\n            \"subscription_enabled\": false,\r\n            \"is_digital_entity\": true,\r\n            \"facebook_page\": \"\",\r\n            \"instagram_page\": \"\",\r\n            \"whatsapp_number\": null,\r\n            \"delivery_service\": null,\r\n            \"gamification_system\": false,\r\n            \"gamification_rules\": null,\r\n            \"type\": \"RETAIL\",\r\n            \"inner_products\": [],\r\n            \"hidden_for_members\": []\r\n        },\r\n        \"signin_methods\": [\r\n            {\r\n                \"type\": \"ONLY_DOCUMENT\",\r\n                \"settings\": null\r\n            }\r\n        ],\r\n        \"firebase_settings\": null,\r\n        \"allow_anonymous_navigation\": true,\r\n        \"maintenance_mode\": false,\r\n        \"recaptcha_settings\": null,\r\n        \"allowed_companies\": [],\r\n        \"allowed_programs\": [\r\n            {\r\n                \"uid\": \"BWvYP8\",\r\n                \"name\": \"Colgate Loyalty\",\r\n                \"segments\": []\r\n            }\r\n        ],\r\n        \"site_name\": \"ColgateSite\",\r\n        \"site_domain\": \"colgate.bederr.com\",\r\n        \"site_firebase_settings\": null,\r\n        \"subdomain\": null,\r\n        \"domain\": \"colgate.bederr.com\",\r\n        \"android_version\": null,\r\n        \"ios_version\": null,\r\n        \"countries\": [\r\n            {\r\n                \"uid\": \"a90x9M\",\r\n                \"name\": \"Perú\",\r\n                \"code\": \"51\",\r\n                \"areas\": [\r\n                    {\r\n                        \"uid\": \"a90x9M\",\r\n                        \"name\": \"Lima\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"EWnl91\",\r\n                        \"name\": \"Piura\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Kk2P8e\",\r\n                        \"name\": \"Ica\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"RkaMkg\",\r\n                        \"name\": \"Arequipa\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"4kKX9v\",\r\n                        \"name\": \"Cusco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"o9RK8q\",\r\n                        \"name\": \"Huancayo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"G8jA9r\",\r\n                        \"name\": \"Cajamarca\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"zWVZWR\",\r\n                        \"name\": \"Tacna\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"o8Bn84\",\r\n                        \"name\": \"Huanuco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"O9dE87\",\r\n                        \"name\": \"Puno\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Gkr39v\",\r\n                        \"name\": \"Chimbote\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"R8x79b\",\r\n                        \"name\": \"Iquitos\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"EkLoWv\",\r\n                        \"name\": \"Amazonas\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Z9ZQka\",\r\n                        \"name\": \"Trujillo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"BWvokl\",\r\n                        \"name\": \"Tumbes\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"48509y\",\r\n                        \"name\": \"Ucayali\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"ZWEJkm\",\r\n                        \"name\": \"Junín\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"g8gLW6\",\r\n                        \"name\": \"Ayacucho\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"j8Dp8O\",\r\n                        \"name\": \"Ancash\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"vkOE8O\",\r\n                        \"name\": \"Apurímac\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"eWeBkj\",\r\n                        \"name\": \"Moquegua\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"X96z9y\",\r\n                        \"name\": \"San Martín\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"eklj82\",\r\n                        \"name\": \"Pasco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"xW3z8L\",\r\n                        \"name\": \"Chiclayo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"384AWO\",\r\n                        \"name\": \"Madre de Dios\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"ekYdWp\",\r\n                        \"name\": \"Huancavelica\"\r\n                    }\r\n                ],\r\n                \"delivery_services\": []\r\n            }\r\n        ],\r\n        \"verify_email\": false,\r\n        \"verify_document\": false,\r\n        \"verify_mobile_number\": false,\r\n        \"web_settings\": null,\r\n        \"empty_page\": true,\r\n        \"use_recaptcha_in_creating_open_companies\": false,\r\n        \"landing_page\": false,\r\n        \"landing_page_type\": null,\r\n        \"landing_page_model\": null,\r\n        \"require_pin\": false,\r\n        \"use_config_app\": true,\r\n        \"marketplace\": false,\r\n        \"allow_signup\": true,\r\n        \"validate_email\": false,\r\n        \"validate_mobile_number\": false,\r\n        \"validate_document\": false\r\n    }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Colgate - Only document",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "c7127015-8491-4067-b995-ba31195c79d3",
+          "body": "[\r\n    {\r\n        \"uid\": \"O9q35W\",\r\n        \"name\": \"ColgateLoyaltyApp\",\r\n        \"favicon\": null,\r\n        \"api_key\": \"0a06fd49-9dcd-4ec4-a799-8ee5ad768bba\",\r\n        \"company\": {\r\n            \"uid\": \"966ZK9\",\r\n            \"name\": \"Colgate\",\r\n            \"description\": \"\",\r\n            \"logo\": \"https://bederr.s3.amazonaws.com/media/companies/logo_photos/4f2349ee5df74787b1557c8c499968c5_20190130143756.png\",\r\n            \"logo_rectangle\": \"https://bederr.s3.amazonaws.com/media/companies/logo_photos/499c79dd171f4f5b8c68069964dcdaac_20190130160840.jpg\",\r\n            \"cover\": null,\r\n            \"banner\": null,\r\n            \"ecommerce_enabled\": true,\r\n            \"benefit_programs_enabled\": true,\r\n            \"currency\": {\r\n                \"code\": \"PEN\",\r\n                \"name\": \"Sol\",\r\n                \"symbol\": \"S/\"\r\n            },\r\n            \"payment_gateway_settings\": null,\r\n            \"subscription_enabled\": false,\r\n            \"is_digital_entity\": true,\r\n            \"facebook_page\": \"\",\r\n            \"instagram_page\": \"\",\r\n            \"whatsapp_number\": null,\r\n            \"delivery_service\": null,\r\n            \"gamification_system\": false,\r\n            \"gamification_rules\": null,\r\n            \"type\": \"RETAIL\",\r\n            \"inner_products\": [],\r\n            \"hidden_for_members\": []\r\n        },\r\n        \"signin_methods\": [\r\n            {\r\n                \"type\": \"DOCUMENT\",\r\n                \"settings\": null\r\n            }\r\n        ],\r\n        \"firebase_settings\": null,\r\n        \"allow_anonymous_navigation\": true,\r\n        \"maintenance_mode\": false,\r\n        \"recaptcha_settings\": null,\r\n        \"allowed_companies\": [],\r\n        \"allowed_programs\": [\r\n            {\r\n                \"uid\": \"BWvYP8\",\r\n                \"name\": \"Colgate Loyalty\",\r\n                \"segments\": []\r\n            }\r\n        ],\r\n        \"site_name\": \"ColgateSite\",\r\n        \"site_domain\": \"colgate.bederr.com\",\r\n        \"site_firebase_settings\": null,\r\n        \"subdomain\": null,\r\n        \"domain\": \"colgate.bederr.com\",\r\n        \"android_version\": null,\r\n        \"ios_version\": null,\r\n        \"countries\": [\r\n            {\r\n                \"uid\": \"a90x9M\",\r\n                \"name\": \"Perú\",\r\n                \"code\": \"51\",\r\n                \"areas\": [\r\n                    {\r\n                        \"uid\": \"a90x9M\",\r\n                        \"name\": \"Lima\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"EWnl91\",\r\n                        \"name\": \"Piura\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Kk2P8e\",\r\n                        \"name\": \"Ica\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"RkaMkg\",\r\n                        \"name\": \"Arequipa\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"4kKX9v\",\r\n                        \"name\": \"Cusco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"o9RK8q\",\r\n                        \"name\": \"Huancayo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"G8jA9r\",\r\n                        \"name\": \"Cajamarca\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"zWVZWR\",\r\n                        \"name\": \"Tacna\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"o8Bn84\",\r\n                        \"name\": \"Huanuco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"O9dE87\",\r\n                        \"name\": \"Puno\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Gkr39v\",\r\n                        \"name\": \"Chimbote\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"R8x79b\",\r\n                        \"name\": \"Iquitos\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"EkLoWv\",\r\n                        \"name\": \"Amazonas\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Z9ZQka\",\r\n                        \"name\": \"Trujillo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"BWvokl\",\r\n                        \"name\": \"Tumbes\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"48509y\",\r\n                        \"name\": \"Ucayali\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"ZWEJkm\",\r\n                        \"name\": \"Junín\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"g8gLW6\",\r\n                        \"name\": \"Ayacucho\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"j8Dp8O\",\r\n                        \"name\": \"Ancash\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"vkOE8O\",\r\n                        \"name\": \"Apurímac\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"eWeBkj\",\r\n                        \"name\": \"Moquegua\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"X96z9y\",\r\n                        \"name\": \"San Martín\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"eklj82\",\r\n                        \"name\": \"Pasco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"xW3z8L\",\r\n                        \"name\": \"Chiclayo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"384AWO\",\r\n                        \"name\": \"Madre de Dios\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"ekYdWp\",\r\n                        \"name\": \"Huancavelica\"\r\n                    }\r\n                ],\r\n                \"delivery_services\": []\r\n            }\r\n        ],\r\n        \"verify_email\": false,\r\n        \"verify_document\": false,\r\n        \"verify_mobile_number\": false,\r\n        \"web_settings\": null,\r\n        \"empty_page\": true,\r\n        \"use_recaptcha_in_creating_open_companies\": false,\r\n        \"landing_page\": false,\r\n        \"landing_page_type\": null,\r\n        \"landing_page_model\": null,\r\n        \"require_pin\": false,\r\n        \"use_config_app\": true,\r\n        \"marketplace\": false,\r\n        \"allow_signup\": true,\r\n        \"validate_email\": false,\r\n        \"validate_mobile_number\": false,\r\n        \"validate_document\": false\r\n    }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Colgate - Document",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "70e01e56-ed80-42c8-b033-a2b21909ae0f",
+          "body": "[\r\n    {\r\n        \"uid\": \"O9q35W\",\r\n        \"name\": \"ColgateLoyaltyApp\",\r\n        \"favicon\": null,\r\n        \"api_key\": \"0a06fd49-9dcd-4ec4-a799-8ee5ad768bba\",\r\n        \"company\": {\r\n            \"uid\": \"966ZK9\",\r\n            \"name\": \"Colgate\",\r\n            \"description\": \"\",\r\n            \"logo\": \"https://bederr.s3.amazonaws.com/media/companies/logo_photos/4f2349ee5df74787b1557c8c499968c5_20190130143756.png\",\r\n            \"logo_rectangle\": \"https://bederr.s3.amazonaws.com/media/companies/logo_photos/499c79dd171f4f5b8c68069964dcdaac_20190130160840.jpg\",\r\n            \"cover\": null,\r\n            \"banner\": null,\r\n            \"ecommerce_enabled\": true,\r\n            \"benefit_programs_enabled\": true,\r\n            \"currency\": {\r\n                \"code\": \"PEN\",\r\n                \"name\": \"Sol\",\r\n                \"symbol\": \"S/\"\r\n            },\r\n            \"payment_gateway_settings\": null,\r\n            \"subscription_enabled\": false,\r\n            \"is_digital_entity\": true,\r\n            \"facebook_page\": \"\",\r\n            \"instagram_page\": \"\",\r\n            \"whatsapp_number\": null,\r\n            \"delivery_service\": null,\r\n            \"gamification_system\": false,\r\n            \"gamification_rules\": null,\r\n            \"type\": \"RETAIL\",\r\n            \"inner_products\": [],\r\n            \"hidden_for_members\": []\r\n        },\r\n        \"signin_methods\": [\r\n            {\r\n                \"type\": \"MOBILE_NUMBER\",\r\n                \"settings\": null\r\n            }\r\n        ],\r\n        \"firebase_settings\": null,\r\n        \"allow_anonymous_navigation\": true,\r\n        \"maintenance_mode\": false,\r\n        \"recaptcha_settings\": null,\r\n        \"allowed_companies\": [],\r\n        \"allowed_programs\": [\r\n            {\r\n                \"uid\": \"BWvYP8\",\r\n                \"name\": \"Colgate Loyalty\",\r\n                \"segments\": []\r\n            }\r\n        ],\r\n        \"site_name\": \"ColgateSite\",\r\n        \"site_domain\": \"colgate.bederr.com\",\r\n        \"site_firebase_settings\": null,\r\n        \"subdomain\": null,\r\n        \"domain\": \"colgate.bederr.com\",\r\n        \"android_version\": null,\r\n        \"ios_version\": null,\r\n        \"countries\": [\r\n            {\r\n                \"uid\": \"a90x9M\",\r\n                \"name\": \"Perú\",\r\n                \"code\": \"51\",\r\n                \"areas\": [\r\n                    {\r\n                        \"uid\": \"a90x9M\",\r\n                        \"name\": \"Lima\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"EWnl91\",\r\n                        \"name\": \"Piura\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Kk2P8e\",\r\n                        \"name\": \"Ica\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"RkaMkg\",\r\n                        \"name\": \"Arequipa\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"4kKX9v\",\r\n                        \"name\": \"Cusco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"o9RK8q\",\r\n                        \"name\": \"Huancayo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"G8jA9r\",\r\n                        \"name\": \"Cajamarca\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"zWVZWR\",\r\n                        \"name\": \"Tacna\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"o8Bn84\",\r\n                        \"name\": \"Huanuco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"O9dE87\",\r\n                        \"name\": \"Puno\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Gkr39v\",\r\n                        \"name\": \"Chimbote\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"R8x79b\",\r\n                        \"name\": \"Iquitos\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"EkLoWv\",\r\n                        \"name\": \"Amazonas\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Z9ZQka\",\r\n                        \"name\": \"Trujillo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"BWvokl\",\r\n                        \"name\": \"Tumbes\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"48509y\",\r\n                        \"name\": \"Ucayali\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"ZWEJkm\",\r\n                        \"name\": \"Junín\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"g8gLW6\",\r\n                        \"name\": \"Ayacucho\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"j8Dp8O\",\r\n                        \"name\": \"Ancash\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"vkOE8O\",\r\n                        \"name\": \"Apurímac\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"eWeBkj\",\r\n                        \"name\": \"Moquegua\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"X96z9y\",\r\n                        \"name\": \"San Martín\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"eklj82\",\r\n                        \"name\": \"Pasco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"xW3z8L\",\r\n                        \"name\": \"Chiclayo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"384AWO\",\r\n                        \"name\": \"Madre de Dios\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"ekYdWp\",\r\n                        \"name\": \"Huancavelica\"\r\n                    }\r\n                ],\r\n                \"delivery_services\": []\r\n            }\r\n        ],\r\n        \"verify_email\": false,\r\n        \"verify_document\": false,\r\n        \"verify_mobile_number\": false,\r\n        \"web_settings\": null,\r\n        \"empty_page\": true,\r\n        \"use_recaptcha_in_creating_open_companies\": false,\r\n        \"landing_page\": false,\r\n        \"landing_page_type\": null,\r\n        \"landing_page_model\": null,\r\n        \"require_pin\": false,\r\n        \"use_config_app\": true,\r\n        \"marketplace\": false,\r\n        \"allow_signup\": true,\r\n        \"validate_email\": false,\r\n        \"validate_mobile_number\": false,\r\n        \"validate_document\": false\r\n    }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Colgate - Phone",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "81ffe762-4a91-4423-934f-09bc2a6c6e39",
+          "body": "[\r\n    {\r\n        \"uid\": \"O9q35W\",\r\n        \"name\": \"ColgateLoyaltyApp\",\r\n        \"favicon\": null,\r\n        \"api_key\": \"0a06fd49-9dcd-4ec4-a799-8ee5ad768bba\",\r\n        \"company\": {\r\n            \"uid\": \"966ZK9\",\r\n            \"name\": \"Colgate\",\r\n            \"description\": \"\",\r\n            \"logo\": \"https://bederr.s3.amazonaws.com/media/companies/logo_photos/4f2349ee5df74787b1557c8c499968c5_20190130143756.png\",\r\n            \"logo_rectangle\": \"https://bederr.s3.amazonaws.com/media/companies/logo_photos/499c79dd171f4f5b8c68069964dcdaac_20190130160840.jpg\",\r\n            \"cover\": null,\r\n            \"banner\": null,\r\n            \"ecommerce_enabled\": true,\r\n            \"benefit_programs_enabled\": true,\r\n            \"currency\": {\r\n                \"code\": \"PEN\",\r\n                \"name\": \"Sol\",\r\n                \"symbol\": \"S/\"\r\n            },\r\n            \"payment_gateway_settings\": null,\r\n            \"subscription_enabled\": false,\r\n            \"is_digital_entity\": true,\r\n            \"facebook_page\": \"\",\r\n            \"instagram_page\": \"\",\r\n            \"whatsapp_number\": null,\r\n            \"delivery_service\": null,\r\n            \"gamification_system\": false,\r\n            \"gamification_rules\": null,\r\n            \"type\": \"RETAIL\",\r\n            \"inner_products\": [],\r\n            \"hidden_for_members\": []\r\n        },\r\n        \"signin_methods\": [\r\n            {\r\n                \"type\": \"EMAIL\",\r\n                \"settings\": null\r\n            }\r\n        ],\r\n        \"firebase_settings\": null,\r\n        \"allow_anonymous_navigation\": true,\r\n        \"maintenance_mode\": false,\r\n        \"recaptcha_settings\": null,\r\n        \"allowed_companies\": [],\r\n        \"allowed_programs\": [\r\n            {\r\n                \"uid\": \"BWvYP8\",\r\n                \"name\": \"Colgate Loyalty\",\r\n                \"segments\": []\r\n            }\r\n        ],\r\n        \"site_name\": \"ColgateSite\",\r\n        \"site_domain\": \"colgate.bederr.com\",\r\n        \"site_firebase_settings\": null,\r\n        \"subdomain\": null,\r\n        \"domain\": \"colgate.bederr.com\",\r\n        \"android_version\": null,\r\n        \"ios_version\": null,\r\n        \"countries\": [\r\n            {\r\n                \"uid\": \"a90x9M\",\r\n                \"name\": \"Perú\",\r\n                \"code\": \"51\",\r\n                \"areas\": [\r\n                    {\r\n                        \"uid\": \"a90x9M\",\r\n                        \"name\": \"Lima\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"EWnl91\",\r\n                        \"name\": \"Piura\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Kk2P8e\",\r\n                        \"name\": \"Ica\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"RkaMkg\",\r\n                        \"name\": \"Arequipa\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"4kKX9v\",\r\n                        \"name\": \"Cusco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"o9RK8q\",\r\n                        \"name\": \"Huancayo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"G8jA9r\",\r\n                        \"name\": \"Cajamarca\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"zWVZWR\",\r\n                        \"name\": \"Tacna\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"o8Bn84\",\r\n                        \"name\": \"Huanuco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"O9dE87\",\r\n                        \"name\": \"Puno\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Gkr39v\",\r\n                        \"name\": \"Chimbote\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"R8x79b\",\r\n                        \"name\": \"Iquitos\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"EkLoWv\",\r\n                        \"name\": \"Amazonas\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Z9ZQka\",\r\n                        \"name\": \"Trujillo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"BWvokl\",\r\n                        \"name\": \"Tumbes\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"48509y\",\r\n                        \"name\": \"Ucayali\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"ZWEJkm\",\r\n                        \"name\": \"Junín\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"g8gLW6\",\r\n                        \"name\": \"Ayacucho\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"j8Dp8O\",\r\n                        \"name\": \"Ancash\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"vkOE8O\",\r\n                        \"name\": \"Apurímac\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"eWeBkj\",\r\n                        \"name\": \"Moquegua\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"X96z9y\",\r\n                        \"name\": \"San Martín\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"eklj82\",\r\n                        \"name\": \"Pasco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"xW3z8L\",\r\n                        \"name\": \"Chiclayo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"384AWO\",\r\n                        \"name\": \"Madre de Dios\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"ekYdWp\",\r\n                        \"name\": \"Huancavelica\"\r\n                    }\r\n                ],\r\n                \"delivery_services\": []\r\n            }\r\n        ],\r\n        \"verify_email\": false,\r\n        \"verify_document\": false,\r\n        \"verify_mobile_number\": false,\r\n        \"web_settings\": null,\r\n        \"empty_page\": true,\r\n        \"use_recaptcha_in_creating_open_companies\": false,\r\n        \"landing_page\": false,\r\n        \"landing_page_type\": null,\r\n        \"landing_page_model\": null,\r\n        \"require_pin\": false,\r\n        \"use_config_app\": true,\r\n        \"marketplace\": false,\r\n        \"allow_signup\": true,\r\n        \"validate_email\": false,\r\n        \"validate_mobile_number\": false,\r\n        \"validate_document\": false\r\n    }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Colgate - Email",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "0b25dc19-d9ec-42f1-b8ec-f13cf6a2ecc8",
+          "body": "[\r\n    {\r\n        \"uid\": \"O9q35W\",\r\n        \"name\": \"ColgateLoyaltyApp\",\r\n        \"favicon\": null,\r\n        \"api_key\": \"0a06fd49-9dcd-4ec4-a799-8ee5ad768bba\",\r\n        \"company\": {\r\n            \"uid\": \"966ZK9\",\r\n            \"name\": \"Colgate\",\r\n            \"description\": \"\",\r\n            \"logo\": \"https://bederr.s3.amazonaws.com/media/companies/logo_photos/4f2349ee5df74787b1557c8c499968c5_20190130143756.png\",\r\n            \"logo_rectangle\": \"https://bederr.s3.amazonaws.com/media/companies/logo_photos/499c79dd171f4f5b8c68069964dcdaac_20190130160840.jpg\",\r\n            \"cover\": null,\r\n            \"banner\": null,\r\n            \"ecommerce_enabled\": true,\r\n            \"benefit_programs_enabled\": true,\r\n            \"currency\": {\r\n                \"code\": \"PEN\",\r\n                \"name\": \"Sol\",\r\n                \"symbol\": \"S/\"\r\n            },\r\n            \"payment_gateway_settings\": null,\r\n            \"subscription_enabled\": false,\r\n            \"is_digital_entity\": true,\r\n            \"facebook_page\": \"\",\r\n            \"instagram_page\": \"\",\r\n            \"whatsapp_number\": null,\r\n            \"delivery_service\": null,\r\n            \"gamification_system\": false,\r\n            \"gamification_rules\": null,\r\n            \"type\": \"RETAIL\",\r\n            \"inner_products\": [],\r\n            \"hidden_for_members\": []\r\n        },\r\n        \"signin_methods\": [\r\n            {\r\n                \"type\": \"EMAIL\",\r\n                \"settings\": null\r\n            },\r\n            {\r\n                \"type\": \"MOBILE_NUMBER\",\r\n                \"settings\": null\r\n            },\r\n            {\r\n                \"type\": \"ONLY_DOCUMENT\",\r\n                \"settings\": null\r\n            }\r\n        ],\r\n        \"firebase_settings\": null,\r\n        \"allow_anonymous_navigation\": true,\r\n        \"maintenance_mode\": false,\r\n        \"recaptcha_settings\": null,\r\n        \"allowed_companies\": [],\r\n        \"allowed_programs\": [\r\n            {\r\n                \"uid\": \"BWvYP8\",\r\n                \"name\": \"Colgate Loyalty\",\r\n                \"segments\": []\r\n            }\r\n        ],\r\n        \"site_name\": \"ColgateSite\",\r\n        \"site_domain\": \"colgate.bederr.com\",\r\n        \"site_firebase_settings\": null,\r\n        \"subdomain\": null,\r\n        \"domain\": \"colgate.bederr.com\",\r\n        \"android_version\": null,\r\n        \"ios_version\": null,\r\n        \"countries\": [\r\n            {\r\n                \"uid\": \"a90x9M\",\r\n                \"name\": \"Perú\",\r\n                \"code\": \"51\",\r\n                \"areas\": [\r\n                    {\r\n                        \"uid\": \"a90x9M\",\r\n                        \"name\": \"Lima\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"EWnl91\",\r\n                        \"name\": \"Piura\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Kk2P8e\",\r\n                        \"name\": \"Ica\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"RkaMkg\",\r\n                        \"name\": \"Arequipa\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"4kKX9v\",\r\n                        \"name\": \"Cusco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"o9RK8q\",\r\n                        \"name\": \"Huancayo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"G8jA9r\",\r\n                        \"name\": \"Cajamarca\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"zWVZWR\",\r\n                        \"name\": \"Tacna\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"o8Bn84\",\r\n                        \"name\": \"Huanuco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"O9dE87\",\r\n                        \"name\": \"Puno\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Gkr39v\",\r\n                        \"name\": \"Chimbote\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"R8x79b\",\r\n                        \"name\": \"Iquitos\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"EkLoWv\",\r\n                        \"name\": \"Amazonas\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"Z9ZQka\",\r\n                        \"name\": \"Trujillo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"BWvokl\",\r\n                        \"name\": \"Tumbes\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"48509y\",\r\n                        \"name\": \"Ucayali\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"ZWEJkm\",\r\n                        \"name\": \"Junín\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"g8gLW6\",\r\n                        \"name\": \"Ayacucho\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"j8Dp8O\",\r\n                        \"name\": \"Ancash\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"vkOE8O\",\r\n                        \"name\": \"Apurímac\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"eWeBkj\",\r\n                        \"name\": \"Moquegua\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"X96z9y\",\r\n                        \"name\": \"San Martín\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"eklj82\",\r\n                        \"name\": \"Pasco\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"xW3z8L\",\r\n                        \"name\": \"Chiclayo\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"384AWO\",\r\n                        \"name\": \"Madre de Dios\"\r\n                    },\r\n                    {\r\n                        \"uid\": \"ekYdWp\",\r\n                        \"name\": \"Huancavelica\"\r\n                    }\r\n                ],\r\n                \"delivery_services\": []\r\n            }\r\n        ],\r\n        \"verify_email\": false,\r\n        \"verify_document\": false,\r\n        \"verify_mobile_number\": false,\r\n        \"web_settings\": null,\r\n        \"empty_page\": true,\r\n        \"use_recaptcha_in_creating_open_companies\": false,\r\n        \"landing_page\": false,\r\n        \"landing_page_type\": null,\r\n        \"landing_page_model\": null,\r\n        \"require_pin\": false,\r\n        \"use_config_app\": true,\r\n        \"marketplace\": false,\r\n        \"allow_signup\": true,\r\n        \"validate_email\": false,\r\n        \"validate_mobile_number\": false,\r\n        \"validate_document\": false\r\n    }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Colgate - EMAIL, MOBILE_NUMBER, ONLY_DOCUMENT",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "5e44da5e-f14b-4cf7-bf94-7bd4331efdd0",
+      "type": "http",
+      "documentation": "Validate user login",
+      "method": "post",
+      "endpoint": "v5/validate/",
+      "responses": [
+        {
+          "uuid": "8cf01975-c890-41ee-aa59-0ac51ccca9dc",
+          "body": "{\r\n    \"document_type\": \"NATIONAL_ID\",\r\n    \"document_number\": \"COL44444\",\r\n    \"is_registered\": true,\r\n    \"has_password\": false,\r\n    \"is_member\": true,\r\n    \"can_register\": true,\r\n    \"require_password_to_users_with_login_only_document\": true\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Usuario no pertenece al programa",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "c6861453-ebad-410f-a533-5cf9cf3e4ba2",
+      "type": "http",
+      "documentation": "Login user ",
+      "method": "post",
+      "endpoint": "v5/login/",
+      "responses": [
+        {
+          "uuid": "fc301d38-0f6b-487e-a72d-d74deb756041",
+          "body": "{\r\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3MDY5MjksInVzZXJuYW1lIjoibWFycm9xdWluLmFkb2xmb0BnbWFpbC5jb20iLCJleHAiOjE3NDYyNDczMTMsImVtYWlsIjoibWFycm9xdWluLmFkb2xmb0BnbWFpbC5jb20ifQ.GfMBjZ6_YTZBrr4rChAJkuplXSYbjFA83VRpis-b7Zg\",\r\n    \"first_name\": \"Fito\"\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "c3d2cb61-47c5-4ff6-b365-efc5e101d2dc",
+      "type": "http",
+      "documentation": "Register device gcm",
+      "method": "post",
+      "endpoint": "v4/me/devices/gcm/",
+      "responses": [
+        {
+          "uuid": "1d12e64b-378f-42cb-aa83-ca48de4070fa",
+          "body": "{\r\n    \"name\": null,\r\n    \"registration_id\": \"dgS9ZoGaT_aqt9J9IPTr7x:APA91bFHy8jKl4yrulMzlMfTd8EaifLSY0yd-m525P_NLk7o0RO_IBfpr-Hvna1TlJKCzL15LxmiMyNiJPNwzCNZocgerGCLFYU4ex6cs2t9w7AZxKF401MJU1yyMKcKm6fqiv9wakKT\",\r\n    \"type\": \"android\"\r\n}",
+          "latency": 0,
+          "statusCode": 201,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "3d26309c-0634-4eab-a843-f24d1774ba65",
+      "type": "http",
+      "documentation": "Get user",
+      "method": "get",
+      "endpoint": "v5/me/",
+      "responses": [
+        {
+          "uuid": "2dc92d4b-d740-4061-9461-bf747ebc7bee",
+          "body": "{\r\n    \"document_type\": \"NATIONAL_ID\",\r\n    \"document_number\": \"12345678\",\r\n    \"first_name\": \"Fito\",\r\n    \"last_name\": \"Marroquín\",\r\n    \"email\": \"marroquin.adolfo@gmail.com\",\r\n    \"birthdate\": \"1997-02-15\",\r\n    \"gender\": \"m\",\r\n    \"country_code_number\": null,\r\n    \"mobile_number\": \"+52+519707325\",\r\n    \"area\": {\r\n        \"uid\": \"a90x9M\",\r\n        \"name\": \"Lima\",\r\n        \"country\": {\r\n            \"uid\": \"a90x9M\",\r\n            \"name\": \"Perú\",\r\n            \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\r\n            \"code\": \"51\"\r\n        }\r\n    },\r\n    \"locality\": null,\r\n    \"type\": \"NONE\",\r\n    \"last_login\": null,\r\n    \"verified_email\": true,\r\n    \"verified_mobile_number\": true,\r\n    \"verified_document\": false,\r\n    \"administrator_setting\": null,\r\n    \"change_password\": false,\r\n    \"manages_company\": false,\r\n    \"bederr_app\": null,\r\n    \"postal_code\": null\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "117e616e-2557-477b-9b66-b6cda2d20dce",
+      "type": "http",
+      "documentation": "Get program user",
+      "method": "get",
+      "endpoint": "v5/me/programs/BWvYP8/",
+      "responses": [
+        {
+          "uuid": "700ae3a9-bb15-40cb-8e36-fc923c573b2f",
+          "body": "{\r\n    \"uid\": \"8g416W\",\r\n    \"name\": \"Colgate México\",\r\n    \"color\": \"D11B25\",\r\n    \"points\": 0,\r\n    \"company\": {\r\n        \"uid\": \"96JZv9\",\r\n        \"name\": \"Colgate México\",\r\n        \"web_page\": \"\",\r\n        \"facebook_page\": \"\",\r\n        \"logo\": null,\r\n        \"cover\": null,\r\n        \"logo_rectangle\": null,\r\n        \"description\": \"\",\r\n        \"sells_products\": false,\r\n        \"profile_image\": null,\r\n        \"banner\": null\r\n    },\r\n    \"levels\": [],\r\n    \"badges\": [],\r\n    \"rating\": 0,\r\n    \"points_system\": false,\r\n    \"levels_system\": false,\r\n    \"rating_system\": false,\r\n    \"services\": [],\r\n    \"repsol_client_number\": null,\r\n    \"latam_member_id\": \"\",\r\n    \"is_member_repsol_latam\": false,\r\n    \"saved_money\": 0,\r\n    \"progressed\": 0,\r\n    \"goal\": 0,\r\n    \"achieved\": 0,\r\n    \"repsol_pin_status\": \"UNREGISTERED\",\r\n    \"segments\": [],\r\n    \"coins\": 0,\r\n    \"extern_client_number\": null,\r\n    \"repsol_external_programs\": null\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "720639f9-7e41-432e-b5ef-661edf56f903",
+      "type": "http",
+      "documentation": "Location user",
+      "method": "post",
+      "endpoint": "v5/me/locations/",
+      "responses": [
+        {
+          "uuid": "e7aab153-75ca-4b80-99cf-30edc3843392",
+          "body": "{\r\n    \"area\": {\r\n        \"uid\": \"a90x9M\",\r\n        \"name\": \"Lima\",\r\n        \"country\": {\r\n            \"uid\": \"a90x9M\",\r\n            \"name\": \"Perú\",\r\n            \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\r\n            \"code\": \"51\"\r\n        }\r\n    }\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "57052a9b-d4a9-4f2c-98f8-5febe5630e71",
+      "type": "http",
+      "documentation": "Get home",
+      "method": "get",
+      "endpoint": "v5/apps/crm-mobile/home/",
+      "responses": [
+        {
+          "uuid": "f695d924-fa92-44b0-88da-ec4796c0c4ae",
+          "body": "{\r\n    \"uid\": \"eklj82\",\r\n    \"mobile_configuration\": \"vWNokl\",\r\n    \"banner\": \"https://bederr.s3.amazonaws.com/media/crm_mobile/home/banner/d24061ff-f1a.png\",\r\n    \"show_level\": false,\r\n    \"show_coins\": false,\r\n    \"show_city\": true,\r\n    \"title\": \"ColgateMexicoApp Configuration Home\",\r\n    \"type\": \"HOME\",\r\n    \"is_active\": true,\r\n    \"structure_type\": \"C\",\r\n    \"buttons\": []\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "55b32b40-d087-4c55-91bc-ee064a68ca9f",
+      "type": "http",
+      "documentation": "Get areas",
+      "method": "get",
+      "endpoint": "v7/areas/",
+      "responses": [
+        {
+          "uuid": "46691b91-4397-417e-a0bf-0a5671356c02",
+          "body": "[\n  {\n    \"uid\": \"YWyQNW\",\n    \"name\": \"Poroto\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"EkLoWv\",\n    \"name\": \"Amazonas\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"d9zVv9\",\n    \"name\": \"Huanchaco\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"g8gLW6\",\n    \"name\": \"Ayacucho\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"Z9ZMbk\",\n    \"name\": \"Laredo\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"JWP78R\",\n    \"name\": \"Huaral\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"a90ez8\",\n    \"name\": \"Simbal\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"X96z9y\",\n    \"name\": \"San Martín\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"Z9ZQka\",\n    \"name\": \"Trujillo\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"48509y\",\n    \"name\": \"Ucayali\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"O9q0Kk\",\n    \"name\": \"La Esperanza\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"o9RK8q\",\n    \"name\": \"Huancayo\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"eklj82\",\n    \"name\": \"Pasco\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"xW3eA9\",\n    \"name\": \"Florencia de Mora\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"ZWENbk\",\n    \"name\": \"San Luis\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"384AWO\",\n    \"name\": \"Madre de Dios\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"YkbO9b\",\n    \"name\": \"Huacho/Barranca\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"xW3z8L\",\n    \"name\": \"Chiclayo\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"j8Dp8O\",\n    \"name\": \"Ancash\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"E97l48\",\n    \"name\": \"Trujillo\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"G8jA9r\",\n    \"name\": \"Cajamarca\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"BWvokl\",\n    \"name\": \"Tumbes\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"eWeBkj\",\n    \"name\": \"Moquegua\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"EWnl91\",\n    \"name\": \"Piura\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"7koKek\",\n    \"name\": \"Moche\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"vWNokl\",\n    \"name\": \"Loreto\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"qWwB38\",\n    \"name\": \"Salaverry\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"ZWEJkm\",\n    \"name\": \"Junín\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"L9GByk\",\n    \"name\": \"El Porvenir\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"Kk2P8e\",\n    \"name\": \"Ica\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"O9dE87\",\n    \"name\": \"Puno\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"4kKX9v\",\n    \"name\": \"Cusco\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"RkaMkg\",\n    \"name\": \"Arequipa\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"Gkr39v\",\n    \"name\": \"Chimbote\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"69JYkZ\",\n    \"name\": \"Tarapoto\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"zWVZWR\",\n    \"name\": \"Tacna\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"vkOE8O\",\n    \"name\": \"Apurímac\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"ekYdWp\",\n    \"name\": \"Huancavelica\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"0Wpwd8\",\n    \"name\": \"Victor Larco Herrera\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"o8Bn84\",\n    \"name\": \"Huanuco\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"R8x79b\",\n    \"name\": \"Iquitos\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  },\n  {\n    \"uid\": \"a90x9M\",\n    \"name\": \"Lima\",\n    \"country\": {\n      \"uid\": \"a90x9M\",\n      \"name\": \"Perú\",\n      \"flag_image\": \"https://bederr.s3.amazonaws.com/media/countries/Bandera-Peru.jpg\",\n      \"code\": \"51\"\n    }\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "bec0626b-4527-4b35-b2bb-b4b0225e75cf",
+      "type": "http",
+      "documentation": "Get localites",
+      "method": "get",
+      "endpoint": "v7/localities/",
+      "responses": [
+        {
+          "uuid": "262d5d60-bb01-4c2f-9885-2c3f4ace7af4",
+          "body": "[]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "adae54f9-2fec-4ac4-a717-799492ebff68",
+      "type": "http",
+      "documentation": "Get surveys",
+      "method": "get",
+      "endpoint": "v5/me/programs/8g416W/surveys/responses/",
+      "responses": [
+        {
+          "uuid": "4c76675f-bd37-4b7a-8137-11f6f7552e7b",
+          "body": "[]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "492bde2a-fe37-4834-ac5a-f9cd2fc87fb5",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "v5/register/",
+      "responses": [
+        {
+          "uuid": "a2efa2d3-ba28-433d-ab88-e1f4ccaddba8",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "folder",
+      "uuid": "1f0fc1bc-5846-4e89-b1dc-bdc0f14b83f4"
+    },
+    {
+      "type": "folder",
+      "uuid": "e95333b9-e88f-45fc-9be6-07c258ea3393"
+    },
+    {
+      "type": "folder",
+      "uuid": "0a75ca71-a289-4ba3-8579-749a0e4b0ed0"
+    },
+    {
+      "type": "route",
+      "uuid": "492bde2a-fe37-4834-ac5a-f9cd2fc87fb5"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
